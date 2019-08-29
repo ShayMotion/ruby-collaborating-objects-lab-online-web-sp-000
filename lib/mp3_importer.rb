@@ -6,8 +6,7 @@ class MP3Importer
   end
 
   def files
-  file = Dir.entries(path).select
-    file.each do |file|
+Dir.entries(path).select {|entry| entry.include?(".mp3")}
     end
     
   end
